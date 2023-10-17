@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+
+
+#nav {
+    height: 130px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    gap: 50px;
+    position: fixed;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    z-index: 999;
+  }
+
+  #nav span
+  {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: linear-gradient(90deg , transparent , #fff);
+    animation: animate 5s infinite linear;
+  }
+
+  @keyframes animate {
+    0%{
+        left: 0;
+        transform: translate(-100%);
+    }
+    100%{
+        left: 100%;
+        transform: translate(0%);
+    }
+}
+  #nav p {
+    height: 4.5vw;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+   
+  }
+
+  #nav a {
+    height: 4.5vw;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+   
+  }
+
+  #nav h4 {
+
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.15vw;
+  }
+
+  #nav h4 a{
+    font-size: 17px;
+  }
+
+        body,div,h1,h2,form,fieldset,input,textarea,footer,p
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: none;
+        }
+        body{
+            background: black;
+            color: white;
+            font-family: tahoma;
+        }
+        p{
+            font-size: 24px;
+            margin-left: 155px;
+        }
+        #wrap
+        {
+            width: 530px;
+            margin: 20px auto 0;
+            height: 1000px;
+            margin-top: 100px;
+            position: fixed;
+            margin-left: 460px;
+        }
+        h1
+        {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 35px;
+            font-family: tahoma;
+            color: white;
+        }
+
+        #form-wrap{
+            overflow: hidden;
+            height: 447px;
+            position: relative;
+            top: 0px;
+            transition: all 1s ease-in-out .3s;
+    
+        }
+
+        #form-wrap:before{
+            content: "";
+            position: absolute;
+            bottom: 128px;
+            left: 0px;
+            background: url(./media/before.png);
+            width: 530px;
+            height: 317px;
+        }
+
+        #form-wrap::after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            background: url('./media/after.png');
+            width: 530px;
+            height: 259px;
+        }
+
+        #form-wrap.hide:after,
+        #form-wrap.hide:before{
+            display: none;
+        }
+
+        #form-wrap:hover{
+            height: 777px;
+            top: -200px;
+        }
+
+        form{
+            background: black;
+            position: relative;
+            top: 200px;
+            overflow: hidden;
+            height: 200px;
+            width: 400px;
+            margin: 0px auto;
+            border: 2x solid rebeccapurple;
+            padding: 20px;
+            border-right: 3px;
+            transition: all 1s ease-in-out .3s;
+        }
+
+        #form-wrap:hover form{
+            height: 530px;
+            border: 2px solid rebeccapurple;
+        }
+
+        label{
+            margin: 11px 20px 0 0;
+            font-size: 15px;
+            color: gray;
+            text-transform: uppercase;
+        }
+
+        input[type=text],textarea{
+            font: 14px normal uppercase, arial, serif;
+            color: dimgray;
+            background: none;
+            width: 380px;
+            height: 37px;
+            padding: 0px 10px;
+            margin: 0 0 10px 0;
+            border: 1px solid #f8f5f1;
+            border-radius: 5px;
+        }
+
+        textarea{
+            height: 80px;
+            padding-top: 14px;
+        }
+
+        textarea:focus,
+        input[type=text]:focus{
+            background: white;
+        }
+
+        #form-wrap input[type=submit]{
+            position: relative;
+            font-family: tahoma;
+            font-size: 24px;
+            color: gray;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            background: none;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: opacity 0.7s ease-in-out 0s;
+        }
+
+        #form-wrap:hover input[type=submit]{
+            z-index: 1;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .btn
+        {
+            margin-left: 120px;
+            padding: 5px 30px;
+            border-radius: 50px;
+
+        }
+        .btn:hover
+        {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+
+   
+    
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <span></span>
+            <div class="logo"><a href="index.html">𝕻𝖍𝖔𝖙𝖔𝕸𝖆𝖓𝖎𝖆</a></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="btn"><a href="https://www.instagram.com/okay__doodle/" target="_blank">𝐈𝐧𝐬𝐭𝐚𝐆𝐫𝐚𝐦</a></div>
+        </nav>
+    </header>
+
+    <div id="wrap">
+        <h1>SEND ME MESSAGE</h1>
+        <br><br><br>
+        <div id="form-wrap">
+            <form>
+                <p>Hello</p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="" id="name">
+
+                <label for="name">Email:</label>
+                <input type="text" name="name" value="" id="name">
+                
+
+                <label for="email">Message:</label>
+                <textarea name="message" id="message" value="Your Message"></textarea>
+
+                <button class="btn">Submit</button>
+                <input type="submit" name="submit" value="THANK YOU! ">
+                
+            </form>
+          
+        </div>
+    </div>
+    
+</body>
+</html>
